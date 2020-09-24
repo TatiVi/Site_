@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+       <header class="header" id="gradient">
+            <br>
+            <h1 id="principal">Pet Care🐾</h1>
+        </header>
+    <br>
+        <form method="POST" action="{{ url_for('inicio') }}">
+            <fieldset>
+                <legend>Faça seu cadastro:</legend>
+                <p><label>Digite seu nome:</label> <input type="text" name="pnome" required></p>
+                <p><label>Digite seu sobrenome:</label> <input type="text" name="snome" required></p>
+                <p><label>Senha:</label> <input type="password" name="senha" required></p>
+                <p><button class="btn btn-primary" type="submit" >Entrar</button></p>
+            </fieldset>
+        </form>
+
+
+</body>
+</html>

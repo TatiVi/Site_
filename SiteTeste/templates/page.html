@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+        <header class="header" id="gradient">
+            <br>
+            <h1 id="principal">Pet Care🐾</h1>
+            <h3>{{ ident }}</h3>
+        </header>
+
+        <nav>
+                <ul class="menu">
+                    <li><a href="#">Serviços</a>
+                        <ul>
+                            <li><a href="#">Passeios</a></li>
+                            <li><a href="#">Cuidados</a></li>
+                            <li><a href="#">xxxxx</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ache um pet anjo</a></li>
+                    <li><a href="#">Dicas</a></li>
+                    <li><a href="#sobrenos">Sobre nós</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="{{ url_for('cadastrar') }}">Cadastre-se</a></li>
+                    <li><a href="#">Login</a>
+                        <ul>
+                            <li>{{ usuario}}</li>
+                            <li><a href="{{ url_for('deslogado') }}">Deslogar</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+        </nav>
+
+        <div class="container-a">
+            <h2>Title</h2>
+            <p>Lorem ipsum integer felis et aenean potenti ipsum cubilia maecenas rutrum cras, cursus pretium eleifend feugiat hendrerit conubia proin urna proin. viverra semper ad quisque ante lacinia dictumst venenatis, diam vitae accumsan molestie morbi. urna odio praesent enim ut vitae phasellus sociosqu fusce blandit aenean. </p>
+        </div>
+
+        <div class="container-b">
+             <h2>Title</h2>
+            <p>Lorem ipsum integer felis et aenean potenti ipsum cubilia maecenas rutrum cras, cursus pretium eleifend feugiat hendrerit conubia proin urna proin. viverra semper ad quisque ante lacinia dictumst venenatis, diam vitae accumsan molestie morbi. urna odio praesent enim ut vitae phasellus sociosqu fusce blandit aenean. </p>
+
+        </div>
+
+        <div class="container-c">
+            <h2>Title</h2>
+            <p>Lorem ipsum integer felis et aenean potenti ipsum cubilia maecenas rutrum cras, cursus pretium eleifend feugiat hendrerit conubia proin urna proin. viverra semper ad quisque ante lacinia dictumst venenatis, diam vitae accumsan molestie morbi. urna odio praesent enim ut vitae phasellus sociosqu fusce blandit aenean. </p>
+        </div>
+
+
+        <footer id="fim" class="grid">
+            <div class="box">
+                <p id="sobrenos">Sobre nós:<br>lorem ipsum dolor sit amet consectetur adipiscing elit conubia natoque nisl tincidunt quam curae sollicitudin</p>
+            </div>
+            <div class="box">
+                <p id="contato">Contato: <br> (31)xxxx-xxxx</p>
+            </div>
+        </footer>
+
+
+
+
+</body>
+</html>
